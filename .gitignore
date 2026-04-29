@@ -1,0 +1,19 @@
+# 永远不要 push 真实配置
+**/.env
+*.bak
+*.bak.*
+*.log
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# 数据库不 push(每个用户自己的)
+*.db
+*.db.bak.*
+
+# 推广图片不 push(每个用户自己生成)
+promo_images/
+
+# 备份文件
+*.tar.gz

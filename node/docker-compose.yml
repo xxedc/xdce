@@ -1,0 +1,12 @@
+services:
+  node:
+    container_name: node
+    image: pasarguard/node:latest
+    restart: always
+    network_mode: host
+    privileged: true
+    cap_add:
+      - NET_ADMIN
+    env_file: .env
+    volumes:
+      - /var/lib/pg-node:/var/lib/pg-node
